@@ -1,7 +1,6 @@
 import { ContextProviderName } from "../../index.js";
 import { BaseContextProvider } from "../index.js";
 import CodeContextProvider from "./CodeContextProvider.js";
-// import CodeHighlightsContextProvider from "./CodeHighlightsContextProvider.js";
 import CodebaseContextProvider from "./CodebaseContextProvider.js";
 import CurrentFileContextProvider from "./CurrentFileContextProvider.js";
 import DatabaseContextProvider from "./DatabaseContextProvider.js";
@@ -23,7 +22,7 @@ import SearchContextProvider from "./SearchContextProvider.js";
 import TerminalContextProvider from "./TerminalContextProvider.js";
 import URLContextProvider from "./URLContextProvider.js";
 
-const Providers: (typeof BaseContextProvider)[] = [
+const providers: (typeof BaseContextProvider)[] = [
   DiffContextProvider,
   FileTreeContextProvider,
   GitHubIssuesContextProvider,
@@ -39,8 +38,6 @@ const Providers: (typeof BaseContextProvider)[] = [
   FolderContextProvider,
   DocsContextProvider,
   GitLabMergeRequestContextProvider,
-  // CodeHighlightsContextProvider,
-  // CodeOutlineContextProvider,
   JiraIssuesContextProvider,
   PostgresContextProvider,
   DatabaseContextProvider,
@@ -52,7 +49,7 @@ const Providers: (typeof BaseContextProvider)[] = [
 export function contextProviderClassFromName(
   name: ContextProviderName,
 ): typeof BaseContextProvider | undefined {
-  const cls = Providers.find((cls) => cls.description.title === name);
+  const cls = providers.find((cls) => cls.description.title === name);
 
   if (!cls) {
     return undefined;
