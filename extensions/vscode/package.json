@@ -137,12 +137,6 @@
         "group": "Continue"
       },
       {
-        "command": "continue.toggleAuxiliaryBar",
-        "category": "Continue",
-        "title": "Toggle Right Sidebar",
-        "group": "Continue"
-      },
-      {
         "command": "continue.focusContinueInput",
         "category": "Continue",
         "title": "Add Highlighted Code to Context",
@@ -151,7 +145,7 @@
       {
         "command": "continue.focusContinueInputWithoutClear",
         "category": "Continue",
-        "title": "Add Highlighted Code to Context",
+        "title": "Toggle Continue Sidebar",
         "group": "Continue"
       },
       {
@@ -232,12 +226,12 @@
     ],
     "keybindings": [
       {
-        "command": "continue.focusContinueInput",
+        "command": "continue.focusContinueInputWithoutClear",
         "mac": "cmd+l",
         "key": "ctrl+l"
       },
       {
-        "command": "continue.focusContinueInputWithoutClear",
+        "command": "continue.focusContinueInput",
         "mac": "cmd+shift+l",
         "key": "ctrl+shift+l"
       },
@@ -273,11 +267,6 @@
         "key": "ctrl+i"
       },
       {
-        "command": "continue.toggleAuxiliaryBar",
-        "mac": "alt+cmd+l",
-        "key": "alt+ctrl+l"
-      },
-      {
         "command": "continue.debugTerminal",
         "mac": "cmd+shift+r",
         "key": "ctrl+shift+r"
@@ -304,9 +293,6 @@
       "commandPalette": [
         {
           "command": "continue.quickEdit"
-        },
-        {
-          "command": "continue.toggleAuxiliaryBar"
         },
         {
           "command": "continue.focusContinueInput"
@@ -339,7 +325,7 @@
       ],
       "continue.continueSubMenu": [
         {
-          "command": "continue.focusContinueInputWithoutClear",
+          "command": "continue.focusContinueInput",
           "group": "Continue",
           "when": "editorHasSelection"
         },

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/naming-convention */
 import * as fs from "node:fs";
 import * as os from "node:os";
 import * as path from "node:path";
@@ -237,16 +238,6 @@ const commandsMap: (
       await addHighlightedCodeToContext(false, sidebar.webviewProtocol);
     },
     "continue.focusContinueInputWithoutClear": async () => {
-      if (!getFullScreenTab()) {
-        vscode.commands.executeCommand("continue.continueGUIView.focus");
-      }
-      sidebar.webviewProtocol?.request(
-        "focusContinueInputWithoutClear",
-        undefined,
-      );
-      await addHighlightedCodeToContext(true, sidebar.webviewProtocol);
-    },
-    "continue.toggleAuxiliaryBar": () => {
       vscode.commands.executeCommand("workbench.action.toggleAuxiliaryBar");
     },
     "continue.quickEdit": async (prompt?: string) => {
@@ -607,8 +598,8 @@ const commandsMap: (
           currentStatus === StatusBarStatus.Paused
             ? StatusBarStatus.Enabled
             : currentStatus === StatusBarStatus.Disabled
-              ? StatusBarStatus.Paused
-              : StatusBarStatus.Disabled;
+            ? StatusBarStatus.Paused
+            : StatusBarStatus.Disabled;
       } else {
         // Toggle between Disabled and Enabled
         targetStatus =

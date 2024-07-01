@@ -161,10 +161,6 @@ class DiffViewerCodeLensProvider implements vscode.CodeLensProvider {
           command: "continue.rejectDiff",
           arguments: [document.uri.fsPath],
         }),
-        // new vscode.CodeLens(range, {
-        //   title: `Further Edit ✏️ (${getMetaKeyLabel()}⇧M)`,
-        //   command: "continue.focusContinueInputWithEdit",
-        // })
       );
       return codeLenses;
     } else {
