@@ -31,6 +31,8 @@
 
 </div>
 
+<!-- Continue is an open-source AI code assistant that runs in your IDE, terminal, and CI -->
+
 Get started in [VS Code](https://marketplace.visualstudio.com/items?itemName=Continue.continue), [JetBrains](https://plugins.jetbrains.com/plugin/22707-continue-extension), or [CLI](https://docs.continue.dev/guides/cli)
 
 ## Agent
