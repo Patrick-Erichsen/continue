@@ -35,6 +35,8 @@
 
 Get started in [VS Code](https://marketplace.visualstudio.com/items?itemName=Continue.continue), [JetBrains](https://plugins.jetbrains.com/plugin/22707-continue-extension), or [CLI](https://docs.continue.dev/guides/cli)
 
+<!-- Core features: Agent for task automation, Chat for Q&A, Edit for code modification, and Autocomplete for inline suggestions -->
+
 ## Agent
 
 [Agent](https://docs.continue.dev/features/agent/quick-start) to work on development tasks together with AI
